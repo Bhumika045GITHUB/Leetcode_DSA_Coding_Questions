@@ -2,14 +2,8 @@ class Solution:
 
      def sortSentence(self, s: str) -> str:
   
-        arr = [i[-1] + i[:-1] for i in s.split()]
-        
-        arr.sort()
-        
-        ans = ""
-        for i in arr:
-            ans += i[1:] + ' '
-        
-        return ans[:-1]
-        
+        a=s[::-1].split();a.sort();r=[]  
+        for word in a:
+            r.append(word[1:][::-1])
+        return " ".join(r)
 
