@@ -1,17 +1,12 @@
-class Solution:
-    def isIsomorphic(self, s: str, t: str) -> bool:
-        if(len(s) !=len(t)):
-	        return False
-        mapping={}
-        for i, j in zip(s,t):
-        	mapping[i]=j
-        if(len(set(mapping.values()))!=len(mapping.values())):
-            return False
-        news=''
-        for i in s:
-            news+=mapping[i]
-        if(news==t):
-        	return True
-        else:
-            return False
-        
+# Time Complexity : O(n)
+class Solution(object):
+    def isIsomorphic(self, s, t):
+        map1 = []
+        map2 = []
+        for idx in s:
+            map1.append(s.index(idx))
+        for idx in t:
+            map2.append(t.index(idx))
+        if map1 == map2:
+            return True
+        return False
