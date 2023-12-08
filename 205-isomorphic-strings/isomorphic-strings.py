@@ -1,12 +1,12 @@
-# Time Complexity : O(n)
 class Solution(object):
     def isIsomorphic(self, s, t):
-        map1 = []
-        map2 = []
-        for idx in s:
-            map1.append(s.index(idx))
-        for idx in t:
-            map2.append(t.index(idx))
-        if map1 == map2:
-            return True
-        return False
+        map1 = {}
+        map2 = {}
+        
+        for idx, char in enumerate(s):
+            map1[char] = map1.get(char, []) + [idx]
+
+        for idx, char in enumerate(t):
+            map2[char] = map2.get(char, []) + [idx]
+
+        return list(map1.values()) == list(map2.values())
