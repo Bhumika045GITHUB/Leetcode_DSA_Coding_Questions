@@ -5,7 +5,7 @@ class Solution:
        nums.reverse()
 
        def inPlaceReverse(start, end):
-           nonlocal nums
+          # nonlocal nums
            while start < end:
                nums[start], nums[end] = nums[end], nums[start]
                start += 1
