@@ -11,5 +11,4 @@ FROM (SELECT
 FROM Employee e
 JOIN Department d
 ON e.departmentId = d.id) AS t
-WHERE rnk = 1
-order by 1;
+WHERE rnk = 1;
