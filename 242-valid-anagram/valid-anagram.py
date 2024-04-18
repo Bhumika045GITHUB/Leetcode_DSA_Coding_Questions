@@ -6,6 +6,8 @@ class Solution:
             s_freq[i]=s_freq.get(i,0)+1
         for i in t:
             t_freq[i]=t_freq.get(i,0)+1
+        print(s_freq)
+        print(t_freq)
 
         return t_freq== s_freq
         
