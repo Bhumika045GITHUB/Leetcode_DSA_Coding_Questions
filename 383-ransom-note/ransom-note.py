@@ -5,4 +5,3 @@ class Solution:
             if magazine.count(i) < ransomNote.count(i):
                 return False
         return True
-
