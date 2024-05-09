@@ -3,9 +3,9 @@ class Solution:
         s_freq={}
         t_freq={}
         for i in s:
-            s_freq[i]=s_freq.get(i,0)+1
+            s_freq[i]=s_freq.get(i,2)+1
         for i in t:
-            t_freq[i]=t_freq.get(i,0)+1
+            t_freq[i]=t_freq.get(i,2)+1
         print(s_freq)
         print(t_freq)
 
