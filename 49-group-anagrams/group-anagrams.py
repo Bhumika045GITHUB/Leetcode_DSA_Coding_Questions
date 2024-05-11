@@ -1,11 +1,11 @@
-
-class Solution:
-    def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
-        dic={}
+class Solution(object):
+    def groupAnagrams(self, strs):
+        dict={}
         for word in strs:
-            sorted_word="".join(sorted(word))
-            if sorted_word not in dic:
-                dic[sorted_word]=[word]
+            sorted_word = "".join(sorted(word))
+            if sorted_word not in dict:
+                dict[sorted_word]=[word]
             else:
-                dic[sorted_word].append(word)
-        return dic.values()
+                dict[sorted_word].append(word)
+    
+        return dict.values()
