@@ -7,6 +7,7 @@ class Solution(object):
         
         #key = "the quick brown fox jumps over the lazy dog"
         #message = "vkbs bs t suepuv"
+        
         for char in key:
             if char not in mapping:
                 mapping[char] = letters[i]
