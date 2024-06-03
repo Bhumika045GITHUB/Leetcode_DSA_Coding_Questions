@@ -1,9 +1,9 @@
 class Solution:
     def findWordsContaining(self, words: List[str], x: str) -> List[int]:
-        answer = []
+        arr = []
         for i in range(len(words)):
             for letter in words[i]:
                 if letter == x:
-                    answer.append(i)
+                    arr.append(i)
                     break
-        return answer
+        return arr
