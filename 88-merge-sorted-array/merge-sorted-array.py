@@ -6,3 +6,4 @@ class Solution:
         for i in range(m,m+n):
             nums1[i]=nums2[m-i]
         nums1.sort()
+        
