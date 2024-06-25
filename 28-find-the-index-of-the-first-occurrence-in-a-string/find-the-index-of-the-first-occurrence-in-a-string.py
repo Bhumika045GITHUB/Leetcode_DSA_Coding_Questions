@@ -2,8 +2,8 @@ class Solution:
     def strStr(self, haystack: str, needle: str) -> int:
         N, H = len(needle), len(haystack)
 
-        for i in range(H - N + 1):
-            for j in range(N):
+        for i in range(H - N + 1): #7
+            for j in range(N): #3
                 if needle[j] != haystack[i + j]:
                     break
                 if j == N - 1:
